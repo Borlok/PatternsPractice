@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="PatternsPractice">
+    <output-path>$PROJECT_DIR$/out/artifacts/PatternsPractice</output-path>
+    <root id="root">
+      <element id="archive" name="PatternsPractice.jar">
+        <element id="module-output" name="PatternsPractice" />
+      </element>
+    </root>
+  </artifact>
+</component>
