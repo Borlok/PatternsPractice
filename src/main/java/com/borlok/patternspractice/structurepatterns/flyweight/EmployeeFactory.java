@@ -10,8 +10,10 @@ public class EmployeeFactory {
         Employee employee = employs.get(name);
         if (employee == null) {
         switch (name) {
-                case "director" -> employee = new Director();
-                case "loader" -> employee = new Loader();
+            case "director": employee = new Director();
+            break;
+            case "loader": employee = new Loader();
+                break;
             }
             System.out.println("Наняли нового работника.");
         employs.put(name,employee);

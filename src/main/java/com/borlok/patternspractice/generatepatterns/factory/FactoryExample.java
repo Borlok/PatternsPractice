@@ -9,11 +9,14 @@ public class FactoryExample {
 }
 
     static MusicFactory createMusicByName (String name) {
-        return switch (name.toLowerCase()) {
-            case "classic" -> new ClassicalMusicFactory();
-            case "rock" -> new RockMusicFactory();
-            default -> throw new RuntimeException(name + " недопустимое имя жанра музыки");
-        };
+        switch (name.toLowerCase()) {
+            case "classic":
+                return new ClassicalMusicFactory();
+            case "rock":
+                return new RockMusicFactory();
+            default:
+                throw new RuntimeException(name + " недопустимое имя жанра музыки");
+        }
     }
 
 }

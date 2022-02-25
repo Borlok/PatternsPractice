@@ -6,5 +6,8 @@ public class BuilderExample {
         director.setServiceBuilder(new CouchServiceBuilder());
         Service service = director.buildService();
         System.out.println(service);
+        /////////////////////// Второй пример (Лучше)
+        Service service2 = new Service.Builder("Alex", 12).build();
+        System.out.println(service2);
     }
 }
