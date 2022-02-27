@@ -3,12 +3,13 @@ package com.borlok.patternspractice.generatepatterns.builder;
 public abstract class ServiceBuilder {
     private Service service;
 
-    void createService() {
+    ServiceBuilder createService() {
         service = new Service();
+        return this;
     }
 
-    abstract void buildName();
-    abstract void buildPrice();
+    abstract ServiceBuilder buildName();
+    abstract ServiceBuilder buildPrice();
 
     Service getService() {
         return service;

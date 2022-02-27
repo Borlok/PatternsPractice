@@ -2,12 +2,14 @@ package com.borlok.patternspractice.generatepatterns.builder;
 
 public class RepairServiceBuilder extends ServiceBuilder{
     @Override
-    void buildName() {
+    RepairServiceBuilder buildName() {
         getService().setServiceName("Ремонт");
+        return this;
     }
 
     @Override
-    void buildPrice() {
+    RepairServiceBuilder buildPrice() {
         getService().setPrice(300000);
+        return this;
     }
 }

@@ -3,12 +3,14 @@ package com.borlok.patternspractice.generatepatterns.builder;
 public class CouchServiceBuilder extends ServiceBuilder{
 
     @Override
-    void buildName() {
+    CouchServiceBuilder buildName() {
         getService().setServiceName("Обучение");
+        return this;
     }
 
     @Override
-    void buildPrice() {
+    CouchServiceBuilder buildPrice() {
         getService().setPrice(50000);
+        return this;
     }
 }

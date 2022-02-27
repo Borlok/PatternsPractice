@@ -8,9 +8,8 @@ public class Director {
     }
 
     Service buildService() {
-        serviceBuilder.createService();
-         serviceBuilder.buildName();
-         serviceBuilder.buildPrice();
-         return serviceBuilder.getService();
+        return serviceBuilder.createService()
+                .buildName()
+                .buildPrice().getService();
     }
 }
